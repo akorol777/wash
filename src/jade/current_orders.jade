@@ -1,0 +1,33 @@
+﻿- var titleMod = { title: 'index page title' }; 
+- var session = { locale: '' }
+
+doctype html
+
+html
+	include includes/head.jade
+	body
+		.wrap
+			.header
+				.topper
+					.container
+						a(href="#").logo
+							|wash me
+						ul.nav
+							li.nav-item 
+								a(href="#").nav-link
+									span.nav-label
+										|8
+									span.nav-text
+										|осталось
+							li.nav-item
+								a(href="#").nav-link
+									i.ico.i-set
+									span.nav-text
+										|моя мойка
+							li.nav-item
+								a(href="#").nav-link
+									i.ico.i-exit
+									span.nav-text
+										|выйти
+
+		script(data-headjs-load='js/init.js', src='js/lib/head.js')

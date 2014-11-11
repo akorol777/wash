@@ -1,0 +1,74 @@
+//constants
+$container-w: 1600px
+$container-min-w: 1366px
+$tooper-h: 70px
+.wrap
+	min-width: $container-min-w 
+.wrap, a
+	color: #fffefe
+	text-decoration: none	
+.container
+	max-width: $container-w
+	padding: 0 10px
+	margin: 0 auto   
+.header
+	position: fixed 
+	top: 0
+	width: 100%
+.topper
+	background-image: url(../img/bg-header.jpg) 
+	height: $tooper-h
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	+clr
+	+cover
+	.logo
+		float: left
+		font-family: helvetica
+		color: #fffefe
+		font-size: 23px
+		line-height: $tooper-h
+		text-decoration: none   
+		display: inline-block
+		&:hover
+			text-decoration: underline
+	.nav
+		float: right
+		+clr
+		.nav-item
+			float: left
+			margin-left: 75px
+		.nav-link
+			&:hover
+				.nav-text
+					text-decoration: underline		
+		.nav-text
+			font-size: 16px
+			line-height: 66px
+		.nav-label
+			background-color: #10899e
+			display: inline-block
+			height: 18px
+			width: 25px	
+			-webkit-border-radius: (9px) 
+			border-radius: (9px) 
+			text-align: center
+			font-size: 12px
+			line-height: 16px
+			margin-right: 10px
+		.ico		
+			margin-right: 10px
+			
+
+
+
+//ico
+.ico
+	display: inline-block
+	vertical-align: middle
+.i-set
+	+s($s-set)
+.i-exit		
+	+s($s-exit)	
+

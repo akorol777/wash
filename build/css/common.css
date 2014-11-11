@@ -1,0 +1,173 @@
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul, fieldset, form, menu, select, textarea, input, button {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  background: transparent;
+}
+
+img, iframe {
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+button, input, select, textarea {
+  color: inherit;
+  font: inherit;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+button, input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+.wrap {
+  min-width: 1366px;
+}
+
+.wrap, a {
+  color: #fffefe;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1600px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topper {
+  background-image: url(../img/bg-header.jpg);
+  height: 70px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.topper:before, .topper:after {
+  content: "";
+  display: table;
+}
+
+.topper:after {
+  clear: both;
+}
+
+.topper .logo {
+  float: left;
+  font-family: helvetica;
+  color: #fffefe;
+  font-size: 23px;
+  line-height: 70px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.topper .logo:hover {
+  text-decoration: underline;
+}
+
+.topper .nav {
+  float: right;
+}
+
+.topper .nav:before, .topper .nav:after {
+  content: "";
+  display: table;
+}
+
+.topper .nav:after {
+  clear: both;
+}
+
+.topper .nav .nav-item {
+  float: left;
+  margin-left: 75px;
+}
+
+.topper .nav .nav-link:hover .nav-text {
+  text-decoration: underline;
+}
+
+.topper .nav .nav-text {
+  font-size: 16px;
+  line-height: 66px;
+}
+
+.topper .nav .nav-label {
+  background-color: #10899e;
+  display: inline-block;
+  height: 18px;
+  width: 25px;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 10px;
+}
+
+.topper .nav .ico {
+  margin-right: 10px;
+}
+
+.ico {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.i-set {
+  background-image: url("../img/sprite.png");
+  background-position: -22px -39px;
+  width: 17px;
+  height: 17px;
+}
+
+.i-exit {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -39px;
+  width: 17px;
+  height: 18px;
+}
